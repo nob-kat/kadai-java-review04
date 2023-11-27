@@ -2,38 +2,38 @@ package animal;
 
 public class Animal {
     // フィールド(名前、年齢)、カプセル化
-    private String animalName;// 名前
-    private int animalAge;    // 年齢
+    private String name;// 名前
+    private int age;    // 年齢
 
     // 引数なしコンストラクタ
     public Animal() {
     }
 
     // 引数ありコンストラクタ(名前、年齢)
-    public Animal(String animalName, int animalAge) {
-        this.animalName = animalName;
-        this.animalAge = animalAge;
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     // GetterSetter
-    public String getAnimalName() {
-        return animalName;
+    public String getName() {
+        return name;
     }
 
-    public void setAnimalName(String AnimalName) {
-        this.animalName = animalName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getAnimalAge() {
-        return animalAge;
+    public int getAge() {
+        return age;
     }
 
-    public void setAnimalAge(int animalAge) {
-        this.animalAge = animalAge;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     // sayメソッド
     public void say() {
-        System.out.println( animalName + "です。" + animalAge +"歳です。");
+        System.out.println( name + "です。" + age +"歳です。");
     }
 }
